@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build accumulator_bug",
+      "type": "shell",
+      "command": "mkdir -p build && gcc -std=c11 -g -O0 -Wall -Wextra accumulator_bug.c -o build/accumulator_bug",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build accumulator_fixed",
+      "type": "shell",
+      "command": "mkdir -p build && gcc -std=c11 -g -O0 -Wall -Wextra accumulator_fixed.c -o build/accumulator_fixed",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "build linear_search",
+      "type": "shell",
+      "command": "mkdir -p build && gcc -std=c11 -g -O0 -Wall -Wextra linear_search.c -o build/linear_search",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}
