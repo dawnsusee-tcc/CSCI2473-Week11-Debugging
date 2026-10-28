@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "accumulator_bug",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "type": "cppdbg",
+      "program": "${workspaceFolder}/build/accumulator_bug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "externalConsole": false,
+      "stopAtEntry": false,
+      "preLaunchTask": "build accumulator_bug"
+    },
+    {
+      "name": "accumulator_fixed",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "type": "cppdbg",
+      "program": "${workspaceFolder}/build/accumulator_fixed",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "externalConsole": false,
+      "stopAtEntry": false,
+      "preLaunchTask": "build accumulator_fixed"
+    },
+    {
+      "name": "linear_search",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "type": "cppdbg",
+      "program": "${workspaceFolder}/build/linear_search",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "externalConsole": false,
+      "stopAtEntry": false,
+      "preLaunchTask": "build linear_search"
+    }
+  ]
+}
